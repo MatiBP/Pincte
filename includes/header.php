@@ -13,7 +13,7 @@
         </li>
         <?php if(!isset($_SESSION['LOGGED_USER'])): ?>
         <li class="nav-item">
-          <a class="nav-link" href="regist.php">Regist</a>
+          <a class="nav-link" href="register.php">Register</a>
         </li>
         <?php endif; ?>
         <?php if(isset($_SESSION['LOGGED_USER'])): ?>

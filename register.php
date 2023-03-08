@@ -16,15 +16,24 @@ if (isset($_SESSION['LOGGED_USER'])) {
 <body>
     <div class='container'>
         <?php include_once("includes/header.php"); ?>
-        <form action="" method="POST">
+        <form action="submit_register.php" method="POST">
             <h1>Enregistrement</h1>
             <label for="email" name="email" class="form-label">email</label>
             <input type="email" class="form-login" id="email" name="email" aria-describedby="email-help" placeholder="you@exemple.com"><br>
 
             <label for="password" name="password" class="form-label">password</label>
             <input type="password" value="password" id="password" name="password" class="form-login"><br>
-            <input type="submit" value="Se connecter" class="btn btn-primary mb-3">
+            
+            <label for="full_name" name="full_name" class="form-label">name</label>
+            <input type="text"  id="passfull_nameword" name="full_name" class="form-login"><br>
+
+            <label for="age" name="age" class="form-label">age</label>
+            <input type="text"  id="age" name="age" class="form-login" pattern="\d+" required><br>
+
+            <input type="submit" value="Register" class="btn btn-primary mb-3">
         </form>
     </div>
+
+    <?php include_once("includes/footer.php"); ?>
 </body>
 </html>

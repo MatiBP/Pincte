@@ -5,7 +5,7 @@ include_once("includes/header.php");
 
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['LOGGED_USER'])) {
-    header("Location: login.php"); // rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+    header("Location: home.php"); // rediriger vers la page de connexion si l'utilisateur n'est pas connecté
     exit;
 }
 

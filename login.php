@@ -9,7 +9,8 @@ require_once 'db.php';
         'secure' => true,
         'httponly' => true,
     ]
-);*/?>
+);*/
+?>
 
 <?php
     
